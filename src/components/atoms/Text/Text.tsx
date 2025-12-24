@@ -1,13 +1,13 @@
-import React from 'react';
+import type { FC, ReactNode } from 'react';
 import './Text.css';
 
 interface TextProps {
-  children: React.ReactNode;
+  children: ReactNode;
   variant?: 'default' | 'muted' | 'heading';
   className?: string;
 }
 
-export const Text: React.FC<TextProps> = ({
+export const Text: FC<TextProps> = ({
   children,
   variant = 'default',
   className = '',

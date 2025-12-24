@@ -1,4 +1,3 @@
-import React from 'react';
 import { TodoPage } from './pages/TodoPage/TodoPage';
 import './App.css';
 

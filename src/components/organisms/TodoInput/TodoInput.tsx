@@ -1,4 +1,4 @@
-import React, { useState, KeyboardEvent } from 'react';
+import { useState, type KeyboardEvent, type FC } from 'react';
 import { Input } from '@/components/atoms/Input/Input';
 import { Button } from '@/components/atoms/Button/Button';
 import './TodoInput.css';
@@ -7,7 +7,7 @@ interface TodoInputProps {
   onAdd: (text: string) => void;
 }
 
-export const TodoInput: React.FC<TodoInputProps> = ({ onAdd }) => {
+export const TodoInput: FC<TodoInputProps> = ({ onAdd }) => {
   const [text, setText] = useState('');
 
   const handleAdd = () => {

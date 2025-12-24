@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import { Todo } from '@/types/todo';
 import { TodoTemplate } from '@/components/templates/TodoTemplate/TodoTemplate';
 import { loadTodos, saveTodos } from '@/utils/storage';
 
-export const TodoPage: React.FC = () => {
+export const TodoPage: FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {

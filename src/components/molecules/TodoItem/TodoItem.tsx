@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { Todo } from '@/types/todo';
 import { Checkbox } from '@/components/atoms/Checkbox/Checkbox';
 import { Button } from '@/components/atoms/Button/Button';
@@ -11,7 +11,7 @@ interface TodoItemProps {
   onDelete: (id: number) => void;
 }
 
-export const TodoItem: React.FC<TodoItemProps> = ({
+export const TodoItem: FC<TodoItemProps> = ({
   todo,
   onToggle,
   onDelete,

@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { Text } from '@/components/atoms/Text/Text';
 import { TodoInput } from '@/components/organisms/TodoInput/TodoInput';
 import { TodoList } from '@/components/organisms/TodoList/TodoList';
@@ -14,7 +14,7 @@ interface TodoTemplateProps {
   onClearCompleted: () => void;
 }
 
-export const TodoTemplate: React.FC<TodoTemplateProps> = ({
+export const TodoTemplate: FC<TodoTemplateProps> = ({
   todos,
   onAddTodo,
   onToggleTodo,

@@ -1,12 +1,12 @@
-import React from 'react';
+import type { FC, InputHTMLAttributes, ChangeEvent } from 'react';
 import './Checkbox.css';
 
-interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   checked: boolean;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Checkbox: React.FC<CheckboxProps> = ({
+export const Checkbox: FC<CheckboxProps> = ({
   className = '',
   ...props
 }) => {

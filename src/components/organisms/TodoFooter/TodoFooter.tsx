@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { Button } from '@/components/atoms/Button/Button';
 import { Text } from '@/components/atoms/Text/Text';
 import './TodoFooter.css';
@@ -9,7 +9,7 @@ interface TodoFooterProps {
   onClearCompleted: () => void;
 }
 
-export const TodoFooter: React.FC<TodoFooterProps> = ({
+export const TodoFooter: FC<TodoFooterProps> = ({
   totalCount,
   completedCount,
   onClearCompleted,

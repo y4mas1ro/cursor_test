@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { Todo } from '@/types/todo';
 import { TodoItem } from '@/components/molecules/TodoItem/TodoItem';
 import { Text } from '@/components/atoms/Text/Text';
@@ -10,7 +10,7 @@ interface TodoListProps {
   onDelete: (id: number) => void;
 }
 
-export const TodoList: React.FC<TodoListProps> = ({
+export const TodoList: FC<TodoListProps> = ({
   todos,
   onToggle,
   onDelete,
