@@ -1,0 +1,36 @@
+.todo-list-container {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list-empty {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* スクロールバーのスタイル */
+.todo-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.todo-list-container::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.todo-list-container::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
